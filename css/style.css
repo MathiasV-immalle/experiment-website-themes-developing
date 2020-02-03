@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300;400;700;900");
-
 * {
   box-sizing: border-box;
   transition: all ease-in-out 250ms;
@@ -22,9 +21,7 @@ img {
   margin: 0 auto;
 }
 
-.clearfix::after,
-section::after,
-footer::after {
+.clearfix::after, section::after, footer::after {
   content: "";
   display: block;
   clear: both;
@@ -43,6 +40,7 @@ footer::after {
     margin-top: 1em;
   }
 }
+
 /* -----typography----- */
 
 h1 {
@@ -95,7 +93,6 @@ p:last-of-type {
     font-size: 1.2rem;
     line-height: 1.6;
   }
-
   .title {
     font-size: 3.7rem;
     margin-top: -3em;
@@ -132,8 +129,7 @@ p:last-of-type {
   border-color: rgb(187, 212, 58);
 }
 
-.button-accent:hover,
-.button-accent:focus {
+.button-accent:hover, .button-accent:focus {
   background-color: #333;
   color: rgb(187, 212, 58);
 }
@@ -143,16 +139,14 @@ p:last-of-type {
   border-color: #232323;
 }
 
-.button-dark:hover,
-.button-dark:focus {
+.button-dark:hover, .button-dark:focus {
   background-color: #232323;
   color: rgb(0, 191, 255);
 }
 
 /* -----parallax----- */
 
-.parallax--bg,
-.parallax--box {
+.parallax--bg, .parallax--box {
   transition: initial;
 }
 
@@ -185,8 +179,7 @@ nav a {
   color: #fff;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover, nav a:focus {
   color: #ddd;
 }
 
@@ -311,9 +304,6 @@ nav a:focus {
 .menu-title {
   font-weight: 900;
 }
-.menu-title-valentine {
-  font-weight: 900;
-}
 
 #Menu {
   font-size: 2.5rem;
@@ -322,13 +312,6 @@ nav a:focus {
 .menu-title span {
   text-decoration: underline;
   text-decoration-color: rgb(187, 212, 58);
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-top: 0.5em;
-}
-.menu-title-valentine span {
-  text-decoration: underline;
-  text-decoration-color: rgb(218, 84, 116);
   font-size: 2.5rem;
   font-weight: 900;
   margin-top: 0.5em;
@@ -344,41 +327,19 @@ nav a:focus {
   color: #fff;
   position: relative;
 }
-.menu-textbox-valentine {
-  background-color: #999;
-  padding: 4em;
-  width: 100vw;
-  margin-left: -2.5%;
-  outline: 2px solid rgb(218, 84, 116);
-  outline-offset: -2.5em;
-  color: #fff;
-  position: relative;
-}
 
 .menu-textbox b span {
   text-decoration: underline;
   text-decoration-color: rgb(187, 212, 58);
 }
-.menu-textbox-valentine b span {
-  text-decoration: underline;
-  text-decoration-color: rgb(218, 84, 116);
-}
+
 .menu-textbox p kleur {
   color: rgb(187, 212, 58);
-  text-decoration: none;
-}
-.menu-textbox-valentine p kleur {
-  color: rgb(218, 84, 116);
   text-decoration: none;
 }
 
 @media (min-width: 25rem) {
   .menu-textbox h1 {
-    top: 1.2em;
-    padding: 0 0.325em;
-    font-size: 1.4rem;
-  }
-  .menu-textbox-valentine h1 {
     top: 1.2em;
     padding: 0 0.325em;
     font-size: 1.4rem;
@@ -394,6 +355,52 @@ nav a:focus {
     text-align: center;
     box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.75);
   }
+  .menu-textbox h1 {
+    top: 1em;
+    left: 6rem;
+    transform: translateX(0);
+    font-size: 2rem;
+  }
+}
+
+/*-----menu-valentine-----*/
+
+.menu-title-valentine {
+  font-weight: 900;
+}
+.menu-title-valentine span {
+  text-decoration: underline;
+  text-decoration-color: rgb(218, 84, 116);
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 0.5em;
+}
+.menu-textbox-valentine {
+  background-color: #999;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid rgb(218, 84, 116);
+  outline-offset: -2.5em;
+  color: #fff;
+  position: relative;
+}
+.menu-textbox-valentine b span {
+  text-decoration: underline;
+  text-decoration-color: rgb(218, 84, 116);
+}
+.menu-textbox-valentine p kleur {
+  color: rgb(218, 84, 116);
+  text-decoration: none;
+}
+@media (min-width: 25rem) {
+  .menu-textbox-valentine h1 {
+    top: 1.2em;
+    padding: 0 0.325em;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 60rem) {
   .menu-textbox-valentine {
     width: 50%;
     margin-left: 25%;
@@ -410,37 +417,14 @@ nav a:focus {
     left: 0;
     margin: -20px 0 0 -40px;
   }
-
-  .menu-textbox h1 {
-    top: 1em;
-    left: 6rem;
-    transform: translateX(0);
-    font-size: 2rem;
+  .hearts {
+    height: 40px;
   }
   .menu-textbox-valentine h1 {
     top: 1em;
     left: 6rem;
     transform: translateX(0);
     font-size: 2rem;
-  }
-}
-
-/* -----valentine----- */
-
-.valentine-heart {
-  height: 20px;
-  width: 20px;
-}
-
-@media (min-width: 25rem) {
-  .valentine-heart {
-    height: 50px;
-    width: 50px;
-  }
-}
-
-@media (min-width: 60rem) {
-  .valentine-heart {
   }
 }
 
@@ -508,11 +492,9 @@ nav a:focus {
     width: 33.3333334%;
     overflow: hidden;
   }
-
   .port-desc {
     transform: translateY(150%);
   }
-
   .port-item:hover .port-desc {
     transform: translateY(0%);
   }
