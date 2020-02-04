@@ -409,6 +409,7 @@ nav a:hover, nav a:focus {
     text-align: center;
     box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.4);
   }
+
   .heart {
     width: 150px;
     display: block;
@@ -417,9 +418,11 @@ nav a:hover, nav a:focus {
     left: 0;
     margin: -20px 0 0 -40px;
   }
+
   .hearts {
     height: 40px;
   }
+  
   .menu-textbox-valentine h1 {
     top: 1em;
     left: 6rem;
